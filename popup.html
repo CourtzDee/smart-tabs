@@ -80,7 +80,31 @@
       <input type="checkbox" id="darkModeToggle" />
       Dark Mode
     </label>
+    <button id="closeDuplicatesBTN" style="margin-bottom: 10px">
+      Close Duplicate Tabs
+    </button>
     <ul id="tabs-list"></ul>
     <script src="popup.js"></script>
+
+    <!----toast notification -->
+    <div
+      id="toast"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 0.9em;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      "
+    ></div>
   </body>
 </html>
