@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Tabs</title>
+    <title>Smart Tabs</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 12px;
+        width: 300px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      body.light {
+        background-color: #f5f7fa;
+        color: #333;
+      }
+
+      body.dark {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 4px;
+      }
+
+      h3 {
+        margin-top: 18px;
+        margin-bottom: 8px;
+        font-size: 1.1em;
+        border-left: 4px solid #007bff;
+        padding-left: 8px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 6px;
+        font-size: 0.95em;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      body.dark h3 {
+        border-left-color: #66b0ff;
+      }
+
+      body.dark a {
+        color: #66b0ff;
+      }
+
+      body.dark a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Your Open Tabs</h2>
+    <label
+      style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px"
+    >
+      <input type="checkbox" id="darkModeToggle" />
+      Dark Mode
+    </label>
+    <ul id="tabs-list"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
